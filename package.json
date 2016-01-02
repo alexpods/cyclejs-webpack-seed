@@ -1,0 +1,30 @@
+{
+  "name": "cyclejs-webpack-seed",
+  "version": "0.0.0",
+  "description": "Project seed for Cycle.js that use Webpack as a module bundler",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --progress --colors",
+    "dev-server": "webpack-dev-server --progress --display-error-detatils",
+    "start": "npm run dev-server"
+  },
+  "keywords": [
+    "cycle.js",
+    "seed"
+  ],
+  "author": "alexpods <aleksey.podskrebyshev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@cycle/core": "^6.0.0",
+    "@cycle/dom": "^8.1.0",
+    "rx": "^4.0.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-react-jsx": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
