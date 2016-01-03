@@ -12,7 +12,7 @@ module.exports = {
   devtool: 'inline-source-map',
 
   devServer: {
-    contentBase: 'public'
+    contentBase: './public'
   },
 
   entry: {
@@ -26,7 +26,7 @@ module.exports = {
     ]
   },
   output: {
-    path: '../public',
+    path: './public',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
@@ -36,8 +36,7 @@ module.exports = {
   },
 
   plugins: [
-    new CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js', minCHunks: Infinity }),
-    new CommonsChunkPlugin({ name: 'common', filename: 'common.js', minChunks: 2, chunks: ['app', 'vendor'] })
+    new CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js', minCHunks: Infinity })
   ],
 
   module: {
